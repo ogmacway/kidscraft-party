@@ -5,10 +5,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Smartphone, Sparkles, Hand, Heart, Check, MessageCircle, Play } from "lucide-react";
 
 import heroMockup from "@/assets/hero-mockup.jpg";
-import character1 from "@/assets/character-1.jpg";
-import character2 from "@/assets/character-2.jpg";
-import character3 from "@/assets/character-3.jpg";
-import character4 from "@/assets/character-4.jpg";
+import character1 from "@/assets/character-1.webp";
+import character2 from "@/assets/character-2.webp";
+import character3 from "@/assets/character-3.webp";
+import character4 from "@/assets/character-4.png";
+import character5 from "@/assets/character-5.png";
+import character6 from "@/assets/character-6.png";
+import character7 from "@/assets/character-7.png";
+import character8 from "@/assets/character-8.png";
+import character9 from "@/assets/character-9.png";
 import tutorial1 from "@/assets/tutorial-1.jpg";
 import tutorial2 from "@/assets/tutorial-2.jpg";
 import tutorial3 from "@/assets/tutorial-3.jpg";
@@ -27,10 +32,15 @@ const Index = () => {
   };
 
   const characterImages = [
-    <img src={character1} alt="Super-herói de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character2} alt="Princesa de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character3} alt="Animalzinho de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character4} alt="Dinossauro de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />,
   ];
 
   const tutorialImages = [
