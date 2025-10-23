@@ -14,6 +14,10 @@ import character6 from "@/assets/character-6.png";
 import character7 from "@/assets/character-7.png";
 import character8 from "@/assets/character-8.png";
 import character9 from "@/assets/character-9.png";
+import character10 from "@/assets/character-10.png";
+import character11 from "@/assets/character-11.png";
+import character12 from "@/assets/character-12.png";
+import character13 from "@/assets/character-13.png";
 import tutorial1 from "@/assets/tutorial-1.jpg";
 import tutorial2 from "@/assets/tutorial-2.jpg";
 import tutorial3 from "@/assets/tutorial-3.jpg";
@@ -41,6 +45,10 @@ const Index = () => {
     <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />,
     <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />,
     <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />,
+    <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />,
   ];
 
   const tutorialImages = [
