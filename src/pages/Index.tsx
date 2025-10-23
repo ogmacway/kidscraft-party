@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { InfiniteCarousel } from "@/components/InfiniteCarousel";
-import { BenefitCard } from "@/components/BenefitCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Smartphone, Sparkles, Hand, Heart, Check, MessageCircle, Play } from "lucide-react";
+import { Check, Play } from "lucide-react";
 
 import heroMockup from "@/assets/hero-mockup.jpg";
 import character1 from "@/assets/character-1.webp";
@@ -26,6 +25,7 @@ import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
 import offerMockup from "@/assets/offer-mockup.jpg";
+import whatsappLogo from "@/assets/logo-whatsapp.png";
 
 const Index = () => {
   const today = new Date();
@@ -140,27 +140,43 @@ const Index = () => {
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
             O Que Seu Filho(a) Vai Desenvolver?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <BenefitCard
-              icon={Smartphone}
-              title="Substituir o vício em telas"
-              description="Oferecendo uma alternativa saudável e divertida ao tempo excessivo em dispositivos eletrônicos."
-            />
-            <BenefitCard
-              icon={Sparkles}
-              title="Estimular a criatividade"
-              description="Desenvolver a imaginação e capacidade criativa através de atividades lúdicas e educativas."
-            />
-            <BenefitCard
-              icon={Hand}
-              title="Desenvolver coordenação motora"
-              description="Melhorando as habilidades motoras finas através de recortar, dobrar e montar os brinquedos."
-            />
-            <BenefitCard
-              icon={Heart}
-              title="Aumentar a aproximação com os Pais"
-              description="Criar momentos únicos de conexão familiar através de atividades compartilhadas."
-            />
+          <div className="max-w-3xl mx-auto space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
+              <div>
+                <h3 className="text-foreground text-xl font-bold mb-2">Substituir o vício em telas</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Oferecendo uma alternativa saudável e divertida ao tempo excessivo em dispositivos eletrônicos.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
+              <div>
+                <h3 className="text-foreground text-xl font-bold mb-2">Estimular a criatividade</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Desenvolver a imaginação e capacidade criativa através de atividades lúdicas e educativas.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
+              <div>
+                <h3 className="text-foreground text-xl font-bold mb-2">Desenvolver coordenação motora</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Melhorando as habilidades motoras finas através de recortar, dobrar e montar os brinquedos.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
+              <div>
+                <h3 className="text-foreground text-xl font-bold mb-2">Aumentar a aproximação com os Pais</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Criar momentos únicos de conexão familiar através de atividades compartilhadas.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -200,7 +216,7 @@ const Index = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
-              <MessageCircle className="w-12 h-12 text-accent mb-4 mx-auto" />
+              <img src={whatsappLogo} alt="WhatsApp" className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-white text-xl font-bold text-center mb-2">
                 ✓ SUPORTE COMPLETO NO WHATSAPP
               </h3>
