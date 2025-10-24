@@ -222,21 +222,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Guarantee Section */}
-      <section className="bg-muted py-12 px-4 sm:py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <img src={guaranteeSeal} alt="Selo de garantia de 30 dias" className="w-32 h-32 mx-auto mb-6" />
-          <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">
-            GARANTIA INCONDICIONAL
-          </h2>
-          <p className="text-foreground leading-relaxed max-w-2xl mx-auto">
-            Você está sob proteção do <strong>Código de Defesa do Consumidor</strong> – LEI Nº 8.078, de 11 de setembro de 1990.
-            <br /><br />
-            Se por algum motivo você achar que não é para você ou não se adaptar, basta entrar em contato dentro do prazo de 30 dias e solicitar o reembolso total do valor investido.
-          </p>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="bg-background py-12 px-4 sm:py-16">
         <div className="max-w-3xl mx-auto">
@@ -302,10 +287,10 @@ const Index = () => {
       </section>
 
       {/* WhatsApp Contact Section */}
-      <section className="bg-white py-12 px-4 sm:py-16">
+      <section className="bg-background py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-[#25D366] rounded-3xl shadow-[0_0_40px_rgba(37,211,102,0.6)] border-4 border-[#25D366] p-8 sm:p-12">
-            <h2 className="text-black text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
+          <div className="bg-card rounded-3xl shadow-[0_0_40px_rgba(37,211,102,0.6)] border-4 border-[#25D366] p-8 sm:p-12">
+            <h2 className="text-foreground text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
               Ficou com dúvida? Entre em contato agora mesmo e esclareça todas elas!
             </h2>
             <div className="flex flex-col items-center gap-6">
@@ -313,13 +298,28 @@ const Index = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="w-full max-w-md bg-[#128C7E] hover:bg-[#075E54] text-white"
+                className="w-full max-w-md"
                 onClick={() => window.open('https://wa.me/5548992050264', '_blank')}
               >
                 ENTRAR EM CONTATO
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Guarantee Section */}
+      <section className="bg-muted py-12 px-4 sm:py-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <img src={guaranteeSeal} alt="Selo de garantia de 30 dias" className="w-32 h-32 mx-auto mb-6" />
+          <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">
+            GARANTIA INCONDICIONAL
+          </h2>
+          <p className="text-foreground leading-relaxed max-w-2xl mx-auto">
+            Você está sob proteção do <strong>Código de Defesa do Consumidor</strong> – LEI Nº 8.078, de 11 de setembro de 1990.
+            <br /><br />
+            Se por algum motivo você achar que não é para você ou não se adaptar, basta entrar em contato dentro do prazo de 30 dias e solicitar o reembolso total do valor investido.
+          </p>
         </div>
       </section>
 
