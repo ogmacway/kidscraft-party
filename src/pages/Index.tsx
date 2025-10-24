@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Play } from "lucide-react";
-
 import heroMockup from "@/assets/hero-mockup.jpg";
 import character1 from "@/assets/character-1.webp";
 import character2 from "@/assets/character-2.webp";
@@ -26,66 +25,39 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
 import offerMockup from "@/assets/offer-mockup.jpg";
 import whatsappLogo from "@/assets/logo-whatsapp.png";
-
 const Index = () => {
   const today = new Date();
   const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear().toString().slice(-2)}`;
-
   const scrollToOffer = () => {
-    document.getElementById('offer-section')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('offer-section')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  const characterImages = [
-    <img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />,
-    <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />,
-  ];
-
-  const tutorialImages = [
-    <img src={tutorial1} alt="Passo 1: Recortar" className="w-full h-auto rounded-xl shadow-md object-cover" />,
-    <img src={tutorial2} alt="Passo 2: Colar" className="w-full h-auto rounded-xl shadow-md object-cover" />,
-    <img src={tutorial3} alt="Passo 3: Brincar" className="w-full h-auto rounded-xl shadow-md object-cover" />,
-  ];
-
-  const testimonialImages = [
-    <div className="relative h-full">
+  const characterImages = [<img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />];
+  const tutorialImages = [<img src={tutorial1} alt="Passo 1: Recortar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial2} alt="Passo 2: Colar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial3} alt="Passo 3: Brincar" className="w-full h-auto rounded-xl shadow-md object-cover" />];
+  const testimonialImages = [<div className="relative h-full">
       <img src={testimonial1} alt="Depoimento mãe feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
         <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
         <p className="text-white text-sm">"Meus filhos adoraram! Ficaram horas brincando."</p>
         <p className="text-white/80 text-xs">- Marina S.</p>
       </div>
-    </div>,
-    <div className="relative h-full">
+    </div>, <div className="relative h-full">
       <img src={testimonial2} alt="Depoimento pai feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
         <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
         <p className="text-white text-sm">"Finalmente meu filho deixou o celular de lado!"</p>
         <p className="text-white/80 text-xs">- Carlos R.</p>
       </div>
-    </div>,
-    <div className="relative h-full">
+    </div>, <div className="relative h-full">
       <img src={testimonial3} alt="Depoimento avó feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
         <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
         <p className="text-white text-sm">"Perfeito para brincar com meus netos!"</p>
         <p className="text-white/80 text-xs">- Rosa M.</p>
       </div>
-    </div>,
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+    </div>];
+  return <div className="min-h-screen bg-background">
       {/* Discount Bar */}
       <div className="bg-destructive py-3 px-4 text-center sticky top-0 z-50 shadow-md">
         <p className="text-accent font-bold text-sm sm:text-base">
@@ -100,19 +72,10 @@ const Index = () => {
             +250 Moldes para seu filho fazer o próprio personagem de papel e ficar longe das telas
           </h1>
           <div className="mb-8 max-w-2xl mx-auto">
-            <img 
-              src={heroMockup} 
-              alt="Kit de personagens de papel para imprimir" 
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <img src={heroMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
           </div>
           <div className="flex justify-center">
-            <Button 
-              variant="cta" 
-              size="xl" 
-              onClick={scrollToOffer}
-              className="w-full max-w-md"
-            >
+            <Button variant="cta" size="xl" onClick={scrollToOffer} className="w-full max-w-md">
               BAIXAR MEUS PERSONAGENS
             </Button>
           </div>
@@ -239,38 +202,20 @@ const Index = () => {
               Resumo Da Sua Oportunidade De Hoje:
             </h2>
             <div className="space-y-3 mb-8">
-              {[
-                "✓ +250 Personagens de Papel Para Recortar",
-                "✓ Moldes Prontos para impressão",
-                "✓ Diversos modelos e personagens",
-                "✓ 30 dias de garantia",
-                "✓ Acesso imediato",
-                "✓ Suporte Completo no WHATSAPP",
-                "✓ Técnicas de Montagem em Vídeo"
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
+              {["✓ +250 Personagens de Papel Para Recortar", "✓ Moldes Prontos para impressão", "✓ Diversos modelos e personagens", "✓ 30 dias de garantia", "✓ Acesso imediato", "✓ Suporte Completo no WHATSAPP", "✓ Técnicas de Montagem em Vídeo"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
                   <p className="text-foreground font-medium text-lg">{item}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             <div className="mb-8 max-w-md mx-auto">
-              <img 
-                src={offerMockup} 
-                alt="Kit completo de personagens" 
-                className="w-full h-auto rounded-xl shadow-lg"
-              />
+              <img src={offerMockup} alt="Kit completo de personagens" className="w-full h-auto rounded-xl shadow-lg" />
             </div>
             <p className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-6">
               APROVEITE POR R$24,90<br />
-              <span className="text-xl">ou 5x R$4,97</span>
+              <span className="text-3xl">ou 5x R$4,97</span>
             </p>
             <div className="flex justify-center">
-              <Button 
-                variant="cta" 
-                size="xl"
-                className="w-full max-w-md"
-              >
+              <Button variant="cta" size="xl" className="w-full max-w-md">
                 BAIXAR MEUS PERSONAGENS
               </Button>
             </div>
@@ -281,11 +226,7 @@ const Index = () => {
       {/* Guarantee Section */}
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <img 
-            src={guaranteeSeal} 
-            alt="Selo de garantia de 30 dias" 
-            className="w-32 h-32 mx-auto mb-6"
-          />
+          <img src={guaranteeSeal} alt="Selo de garantia de 30 dias" className="w-32 h-32 mx-auto mb-6" />
           <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">
             GARANTIA INCONDICIONAL
           </h2>
@@ -369,8 +310,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
