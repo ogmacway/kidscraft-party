@@ -25,6 +25,7 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
 import offerMockup from "@/assets/offer-mockup.jpg";
 import whatsappLogo from "@/assets/logo-whatsapp.png";
+import whatsappIcon from "@/assets/whatsapp-icon.png";
 const Index = () => {
   const today = new Date();
   const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear().toString().slice(-2)}`;
@@ -297,6 +298,28 @@ const Index = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </div>
+      </section>
+
+      {/* WhatsApp Contact Section */}
+      <section className="bg-white py-12 px-4 sm:py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-[#25D366] rounded-3xl shadow-[0_0_40px_rgba(37,211,102,0.6)] border-4 border-[#25D366] p-8 sm:p-12">
+            <h2 className="text-black text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
+              Ficou com dúvida? Entre em contato agora mesmo e esclareça todas elas!
+            </h2>
+            <div className="flex flex-col items-center gap-6">
+              <img src={whatsappIcon} alt="WhatsApp" className="w-32 h-32 sm:w-40 sm:h-40" />
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="w-full max-w-md bg-[#128C7E] hover:bg-[#075E54] text-white"
+                onClick={() => window.open('https://wa.me/5548992050264', '_blank')}
+              >
+                ENTRAR EM CONTATO
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
