@@ -59,7 +59,7 @@ const Index = () => {
     </div>];
   return <div className="min-h-screen bg-background">
       {/* Discount Bar */}
-      <div className="bg-destructive py-3 px-4 text-center sticky top-0 z-50 shadow-md">
+      <div className="bg-destructive py-3 px-4 text-center shadow-md">
         <p className="text-accent font-bold text-sm sm:text-base">
           Desconto de 75% apenas hoje {formattedDate}
         </p>
