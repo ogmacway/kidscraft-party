@@ -159,9 +159,7 @@ const Index = () => {
       {/* Testimonials Section */}
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
-            O Que Os Pais Estão Dizendo
-          </h2>
+          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">O Que Os Pais Estão Dizendo Sobre Nós:</h2>
           <div className="max-w-sm mx-auto h-[500px]">
             <InfiniteCarousel items={testimonialImages} className="h-full" />
           </div>
