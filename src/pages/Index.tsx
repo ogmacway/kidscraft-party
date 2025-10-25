@@ -37,28 +37,40 @@ const Index = () => {
   };
   const characterImages = [<img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />];
   const tutorialImages = [<img src={tutorial1} alt="Passo 1: Recortar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial2} alt="Passo 2: Colar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial3} alt="Passo 3: Brincar" className="w-full h-auto rounded-xl shadow-md object-cover" />];
-  const testimonialImages = [<div className="relative h-full">
-      <img src={testimonial1} alt="Depoimento mãe feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
-        <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
-        <p className="text-white text-sm">"Meus filhos adoraram! Ficaram horas brincando."</p>
-        <p className="text-white/80 text-xs">- Marina S.</p>
-      </div>
-    </div>, <div className="relative h-full">
-      <img src={testimonial2} alt="Depoimento pai feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
-        <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
-        <p className="text-white text-sm">"Finalmente meu filho deixou o celular de lado!"</p>
-        <p className="text-white/80 text-xs">- Carlos R.</p>
-      </div>
-    </div>, <div className="relative h-full">
-      <img src={testimonial3} alt="Depoimento avó feliz" className="w-full h-full object-cover rounded-xl shadow-md" />
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
-        <p className="text-white text-sm font-medium">⭐⭐⭐⭐⭐</p>
-        <p className="text-white text-sm">"Perfeito para brincar com meus netos!"</p>
-        <p className="text-white/80 text-xs">- Rosa M.</p>
-      </div>
-    </div>];
+  const testimonialVideos = [
+    <div className="relative h-full">
+      <video 
+        src="/videos/depoimento-1.mp4" 
+        className="w-full h-full object-cover rounded-xl shadow-md"
+        controls
+        playsInline
+      />
+    </div>,
+    <div className="relative h-full">
+      <video 
+        src="/videos/depoimento-2.mp4" 
+        className="w-full h-full object-cover rounded-xl shadow-md"
+        controls
+        playsInline
+      />
+    </div>,
+    <div className="relative h-full">
+      <video 
+        src="/videos/depoimento-3.mp4" 
+        className="w-full h-full object-cover rounded-xl shadow-md"
+        controls
+        playsInline
+      />
+    </div>,
+    <div className="relative h-full">
+      <video 
+        src="/videos/depoimento-4.mp4" 
+        className="w-full h-full object-cover rounded-xl shadow-md"
+        controls
+        playsInline
+      />
+    </div>
+  ];
   return <div className="min-h-screen bg-background">
       {/* Discount Bar */}
       <div className="bg-destructive py-3 px-4 text-center shadow-md">
@@ -190,7 +202,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">O Que Os Pais Estão Dizendo Sobre Nós:</h2>
           <div className="max-w-sm mx-auto h-[500px]">
-            <InfiniteCarousel items={testimonialImages} className="h-full" />
+            <InfiniteCarousel items={testimonialVideos} className="h-full" />
           </div>
         </div>
       </section>
