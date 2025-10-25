@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Check, Play } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.jpg";
 import character1 from "@/assets/character-1.webp";
@@ -152,15 +153,34 @@ const Index = () => {
             A Montagem é Simples! Veja Como Funciona.
           </h2>
           <div className="max-w-2xl mx-auto">
-            <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                src="https://www.youtube.com/embed/vs3VappJU2o"
-                title="Tutorial de montagem"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                      src="https://www.youtube.com/embed/YM_lTbazDlc"
+                      title="Tutorial de montagem - Parte 1"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                      src="https://www.youtube.com/embed/vs3VappJU2o"
+                      title="Tutorial de montagem - Parte 2"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
