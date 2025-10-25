@@ -151,8 +151,16 @@ const Index = () => {
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
             A Montagem é Simples! Veja Como Funciona.
           </h2>
-          <div className="max-w-sm mx-auto">
-            <InfiniteCarousel items={tutorialImages} />
+          <div className="max-w-2xl mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                src="https://www.youtube.com/embed/vs3VappJU2o"
+                title="Tutorial de montagem"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>
