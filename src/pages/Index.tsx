@@ -89,7 +89,12 @@ const Index = () => {
             <img src={productMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
           </div>
           <div className="flex justify-center">
-            <Button variant="cta" size="xl" onClick={scrollToOffer} className="w-full max-w-md">
+            <Button 
+              variant="cta" 
+              size="xl" 
+              onClick={() => window.open('https://go.pepperpay.com.br/ab7ih', '_blank')} 
+              className="w-full max-w-md"
+            >
               BAIXAR MEUS PERSONAGENS
             </Button>
           </div>
@@ -257,7 +262,12 @@ const Index = () => {
               <span className="text-3xl">ou 5x R$4,97</span>
             </p>
             <div className="flex justify-center">
-              <Button variant="cta" size="xl" className="w-full max-w-md">
+              <Button 
+                variant="cta" 
+                size="xl" 
+                onClick={() => window.open('https://go.pepperpay.com.br/ab7ih', '_blank')} 
+                className="w-full max-w-md"
+              >
                 BAIXAR MEUS PERSONAGENS
               </Button>
             </div>
