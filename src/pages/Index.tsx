@@ -38,34 +38,34 @@ const Index = () => {
   const characterImages = [<img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />];
   const tutorialImages = [<img src={tutorial1} alt="Passo 1: Recortar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial2} alt="Passo 2: Colar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial3} alt="Passo 3: Brincar" className="w-full h-auto rounded-xl shadow-md object-cover" />];
   const testimonialVideos = [
-    <div className="relative h-full">
+    <div className="relative w-full aspect-[9/16]">
       <video 
         src="/videos/depoimento-1.mp4" 
-        className="w-full h-full object-cover rounded-xl shadow-md"
+        className="w-full h-full object-contain rounded-xl shadow-md"
         controls
         playsInline
       />
     </div>,
-    <div className="relative h-full">
+    <div className="relative w-full aspect-[9/16]">
       <video 
         src="/videos/depoimento-2.mp4" 
-        className="w-full h-full object-cover rounded-xl shadow-md"
+        className="w-full h-full object-contain rounded-xl shadow-md"
         controls
         playsInline
       />
     </div>,
-    <div className="relative h-full">
+    <div className="relative w-full aspect-[9/16]">
       <video 
         src="/videos/depoimento-3.mp4" 
-        className="w-full h-full object-cover rounded-xl shadow-md"
+        className="w-full h-full object-contain rounded-xl shadow-md"
         controls
         playsInline
       />
     </div>,
-    <div className="relative h-full">
+    <div className="relative w-full aspect-[9/16]">
       <video 
         src="/videos/depoimento-4.mp4" 
-        className="w-full h-full object-cover rounded-xl shadow-md"
+        className="w-full h-full object-contain rounded-xl shadow-md"
         controls
         playsInline
       />
@@ -201,8 +201,8 @@ const Index = () => {
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">O Que Os Pais Estão Dizendo Sobre Nós:</h2>
-          <div className="max-w-sm mx-auto h-[500px]">
-            <InfiniteCarousel items={testimonialVideos} className="h-full" />
+          <div className="max-w-md mx-auto">
+            <InfiniteCarousel items={testimonialVideos} />
           </div>
         </div>
       </section>
