@@ -162,7 +162,7 @@ const Index = () => {
       <section className="bg-background py-12 px-4 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
-            A Montagem é Simples! Veja Como Funciona.
+            Tudo Separado Por Níveis! Veja Como Funciona.
           </h2>
           <div className="max-w-2xl mx-auto px-12">
             <Carousel className="w-full">
