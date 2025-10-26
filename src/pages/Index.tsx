@@ -87,7 +87,7 @@ const Index = () => {
       <section className="bg-primary py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 leading-tight">
-            +250 Moldes para seu filho fazer o próprio personagem de papel e ficar longe das telas
+            +250 Personagens de papel para seu filho fazer e ficar longe das telas
           </h1>
           <div className="mb-8 max-w-2xl mx-auto">
             <img src={productMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
