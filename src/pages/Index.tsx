@@ -311,7 +311,7 @@ const Index = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-card rounded-lg px-6 border-2 border-primary/20">
               <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-                Como vou receber?
+                {" "}{" "}Como vou receber?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 Você receberá um link para download diretamente no email utilizado na compra. Só clicar e pronto!
