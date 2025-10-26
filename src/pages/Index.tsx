@@ -3,7 +3,7 @@ import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Check, Play } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.jpg";
+import productMockup from "@/assets/product-mockup.png";
 import character1 from "@/assets/character-1.webp";
 import character2 from "@/assets/character-2.webp";
 import character3 from "@/assets/character-3.webp";
@@ -24,7 +24,7 @@ import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
-import offerMockup from "@/assets/offer-mockup.jpg";
+
 import whatsappLogo from "@/assets/logo-whatsapp.png";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 const Index = () => {
@@ -86,7 +86,7 @@ const Index = () => {
             +250 Moldes para seu filho fazer o próprio personagem de papel e ficar longe das telas
           </h1>
           <div className="mb-8 max-w-2xl mx-auto">
-            <img src={heroMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
+            <img src={productMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
           </div>
           <div className="flex justify-center">
             <Button variant="cta" size="xl" onClick={scrollToOffer} className="w-full max-w-md">
@@ -164,7 +164,7 @@ const Index = () => {
           <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
             A Montagem é Simples! Veja Como Funciona.
           </h2>
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto px-12">
             <Carousel className="w-full">
               <CarouselContent>
                 <CarouselItem>
@@ -190,8 +190,8 @@ const Index = () => {
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="left-0 bg-primary text-white hover:bg-primary/90" />
+              <CarouselNext className="right-0 bg-primary text-white hover:bg-primary/90" />
             </Carousel>
           </div>
         </div>
@@ -247,8 +247,11 @@ const Index = () => {
                 </div>)}
             </div>
             <div className="mb-8 max-w-md mx-auto">
-              <img src={offerMockup} alt="Kit completo de personagens" className="w-full h-auto rounded-xl shadow-lg" />
+              <img src={productMockup} alt="Kit completo de personagens" className="w-full h-auto rounded-xl shadow-lg" />
             </div>
+            <p className="text-destructive text-2xl sm:text-3xl font-bold text-center mb-2">
+              DE <span className="line-through">R$97</span>
+            </p>
             <p className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-6">
               APROVEITE POR R$24,90<br />
               <span className="text-3xl">ou 5x R$4,97</span>
