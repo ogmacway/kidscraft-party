@@ -52,7 +52,7 @@ const Index = () => {
       {/* Discount Bar */}
       <div className="bg-destructive py-3 px-4 text-center shadow-md">
         <p className="text-accent font-bold text-sm sm:text-base">
-          Desconto de 75% apenas hoje {formattedDate}
+          DESCONTO DE 75% APENAS HOJE {formattedDate}
         </p>
       </div>
 
