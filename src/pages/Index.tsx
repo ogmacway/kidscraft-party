@@ -92,36 +92,28 @@ const Index = () => {
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
                 <h3 className="text-foreground text-xl font-bold mb-2">Substitui o vício em telas</h3>
-                <p className="text-lg leading-relaxed font-bold text-blue-900">
-                  Oferecendo uma alternativa saudável e divertida ao tempo excessivo em dispositivos eletrônicos.
-                </p>
+                
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
                 <h3 className="text-foreground text-xl font-bold mb-2">Estimula a criatividade</h3>
-                <p className="text-lg leading-relaxed font-bold text-blue-900">
-                  Desenvolver a imaginação e capacidade criativa através de atividades lúdicas e educativas.
-                </p>
+                
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
                 <h3 className="text-foreground text-xl font-bold mb-2">Desenvolve a coordenação motora</h3>
-                <p className="text-lg leading-relaxed font-bold text-blue-900">
-                  Melhorando as habilidades motoras finas através de recortar, dobrar e montar os brinquedos.
-                </p>
+                
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
                 <h3 className="text-foreground text-xl font-bold mb-2">Aumenta a aproximação com os Pais</h3>
-                <p className="text-lg leading-relaxed font-bold text-blue-900">
-                  Criar momentos únicos de conexão familiar através de atividades compartilhadas.
-                </p>
+                
               </div>
             </div>
           </div>
