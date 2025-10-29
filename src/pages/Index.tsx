@@ -3,7 +3,7 @@ import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Check, Play } from "lucide-react";
-import productMockup from "@/assets/product-mockup.png";
+import heroMockup from "@/assets/hero-mockup-2.png";
 import character1 from "@/assets/character-1.webp";
 import character2 from "@/assets/character-2.webp";
 import character3 from "@/assets/character-3.webp";
@@ -61,7 +61,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 leading-tight">SUPER KIT +250 PERSONAGENS de papel para seu filho ficar longe das telas</h1>
           <div className="mb-8 max-w-2xl mx-auto">
-            <img src={productMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
+            <img src={heroMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
           </div>
           <div className="flex justify-center">
             <Button variant="cta" size="xl" onClick={scrollToOffer} className="w-full max-w-md">
@@ -211,8 +211,11 @@ const Index = () => {
       {/* Offer Section */}
       <section id="offer-section" className="bg-background py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-3xl shadow-[0_0_40px_rgba(72,187,120,0.6)] border-4 border-secondary p-8">
-            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8">RESUMO DO KIT COMPLETO:</h2>
+          <div className="bg-card rounded-3xl shadow-[0_0_40px_rgba(72,187,120,0.6)] border-4 border-secondary p-8 relative">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
+              MAIS VENDIDO
+            </div>
+            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8 mt-4">RESUMO DO KIT COMPLETO:</h2>
             <div className="space-y-3 mb-8">
               {["+250 Personagens de Papel Para Recortar", "Moldes Prontos para impressão", "Diversos modelos e personagens", "30 dias de garantia", "Acesso imediato", "Suporte Completo no WHATSAPP", "Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
@@ -231,6 +234,27 @@ const Index = () => {
             </p>
             <div className="flex justify-center">
               <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://go.pepperpay.com.br/ab7ih', '_blank')}>
+                BAIXAR MEUS PERSONAGENS
+              </Button>
+            </div>
+          </div>
+
+          {/* Kit Básico Card */}
+          <div className="bg-card rounded-3xl shadow-lg p-8 mt-8 border-2 border-foreground">
+            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8">KIT BÁSICO:</h2>
+            <div className="space-y-3 mb-8">
+              {["300 Personagens de Papel Para Recortar", "Acesso Vitalício", "30 Dias de garantia"].map((item, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground font-medium text-lg">{item}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-6">
+              APENAS R$11,90
+            </p>
+            <div className="flex justify-center">
+              <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://go.pepperpay.com.br/zjsrf', '_blank')}>
                 BAIXAR MEUS PERSONAGENS
               </Button>
             </div>
