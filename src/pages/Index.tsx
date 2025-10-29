@@ -251,7 +251,7 @@ const Index = () => {
               DE <span className="line-through">R$97</span>
             </p>
             <p className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-6">
-               POR APENAS R$24,90<br />
+               POR R$24,90<br />
               <span className="text-3xl">ou 5x R$4,97</span>
             </p>
             <div className="flex justify-center">
