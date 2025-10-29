@@ -267,8 +267,7 @@ const Index = () => {
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
           <img src={guaranteeSeal} alt="Selo de garantia de 30 dias" className="w-32 h-32 mx-auto mb-6" />
-          <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">POR APENAS R$24,90
-ou 5x R$4,97</h2>
+          <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">GARANTIA DE 30 DIAS</h2>
           <p className="text-foreground leading-relaxed max-w-2xl mx-auto">
             Você está sob proteção do <strong>Código de Defesa do Consumidor</strong> – LEI Nº 8.078, de 11 de setembro de 1990.
             <br /><br />
