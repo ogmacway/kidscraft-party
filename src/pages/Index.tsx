@@ -237,7 +237,7 @@ const Index = () => {
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
               MAIS VENDIDO
             </div>
-            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8 mt-4">RESUMO DO KIT COMPLETO:</h2>
+            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8 mt-4">SUPER KIT COMPLETO:</h2>
             <div className="space-y-3 mb-8">
               {["+250 Personagens de Papel Para Recortar", "Moldes Prontos para impressão", "Diversos modelos e personagens", "30 dias de garantia", "Acesso imediato", "Suporte Completo no WHATSAPP", "Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
@@ -251,7 +251,7 @@ const Index = () => {
               DE <span className="line-through">R$97</span>
             </p>
             <p className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-6">
-              APROVEITE POR R$24,90<br />
+               POR APENAS R$24,90<br />
               <span className="text-3xl">ou 5x R$4,97</span>
             </p>
             <div className="flex justify-center">
