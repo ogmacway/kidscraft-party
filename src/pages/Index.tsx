@@ -212,9 +212,7 @@ const Index = () => {
       <section id="offer-section" className="bg-background py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto">
           <div className="bg-card rounded-3xl shadow-[0_0_40px_rgba(72,187,120,0.6)] border-4 border-secondary p-8">
-            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8">
-              Resumo Da Sua Oportunidade De Hoje:
-            </h2>
+            <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8">RESUMO DO KIT COMPLETO:</h2>
             <div className="space-y-3 mb-8">
               {["+250 Personagens de Papel Para Recortar", "Moldes Prontos para impressão", "Diversos modelos e personagens", "30 dias de garantia", "Acesso imediato", "Suporte Completo no WHATSAPP", "Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
