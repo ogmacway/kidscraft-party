@@ -86,9 +86,7 @@ const Index = () => {
       {/* Benefits Section */}
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">
-            O Que Seu Filho(a) Vai Desenvolver?
-          </h2>
+          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">SUPER KIT +250 PERSONAGENS de papel para seu filho fazer e ficar longe das telas</h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
