@@ -239,7 +239,7 @@ const Index = () => {
             </div>
             <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8 mt-4">SUPER KIT COMPLETO:</h2>
             <div className="space-y-3 mb-8">
-              {["+250 Personagens de Papel Para Recortar", "Moldes Prontos para impressão", "Diversos modelos e personagens", "30 dias de garantia", "Acesso imediato", "Suporte Completo no WHATSAPP", "Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
+              {["Super Kit +250 Personagens de Papel", "Moldes Prontos", "30 dias de garantia", "Acesso Vitalício", "Bônus: Suporte Completo no WHATSAPP", "Bônus: Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
                   <p className="text-foreground font-medium text-lg">{item}</p>
                 </div>)}
