@@ -216,26 +216,13 @@ const Index = () => {
               Resumo Da Sua Oportunidade De Hoje:
             </h2>
             <div className="space-y-3 mb-8">
-              {[
-                "+250 Personagens de Papel Para Recortar",
-                "Moldes Prontos para impressão",
-                "Diversos modelos e personagens",
-                "30 dias de garantia",
-                "Acesso imediato",
-                "Suporte Completo no WHATSAPP",
-                "Técnicas de Montagem em Vídeo",
-                "Bônus: KIT QUEBRA CABEÇAS",
-                "Bônus: KIT JOGOS DA MEMÓRIA",
-                "Bônus: 100 PÁGINA BOBBIE GOODS"
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
+              {["+250 Personagens de Papel Para Recortar", "Moldes Prontos para impressão", "Diversos modelos e personagens", "30 dias de garantia", "Acesso imediato", "Suporte Completo no WHATSAPP", "Técnicas de Montagem em Vídeo", "Bônus: KIT QUEBRA CABEÇAS", "Bônus: KIT JOGOS DA MEMÓRIA", "Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
                   <p className="text-foreground font-medium text-lg">{item}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             <div className="mb-8 max-w-md mx-auto">
-              <img src={productMockup} alt="Kit completo de personagens" className="w-full h-auto rounded-xl shadow-lg" />
+              
             </div>
             <p className="text-destructive text-2xl sm:text-3xl font-bold text-center mb-2">
               DE <span className="line-through">R$97</span>
