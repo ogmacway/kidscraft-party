@@ -86,12 +86,12 @@ const Index = () => {
       {/* Benefits Section */}
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">SUPER KIT +250 PERSONAGENS de papel para seu filho fazer e ficar longe das telas</h2>
+          <h2 className="text-foreground text-3xl sm:text-4xl font-bold text-center mb-12">Feito Para Desenvolver!</h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
-                <h3 className="text-foreground text-xl font-bold mb-2">Substituir o vício em telas</h3>
+                <h3 className="text-foreground text-xl font-bold mb-2">Substitui o vício em telas</h3>
                 <p className="text-lg leading-relaxed font-bold text-blue-900">
                   Oferecendo uma alternativa saudável e divertida ao tempo excessivo em dispositivos eletrônicos.
                 </p>
@@ -100,7 +100,7 @@ const Index = () => {
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
-                <h3 className="text-foreground text-xl font-bold mb-2">Estimular a criatividade</h3>
+                <h3 className="text-foreground text-xl font-bold mb-2">Estimula a criatividade</h3>
                 <p className="text-lg leading-relaxed font-bold text-blue-900">
                   Desenvolver a imaginação e capacidade criativa através de atividades lúdicas e educativas.
                 </p>
@@ -109,7 +109,7 @@ const Index = () => {
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
-                <h3 className="text-foreground text-xl font-bold mb-2">Desenvolver coordenação motora</h3>
+                <h3 className="text-foreground text-xl font-bold mb-2">Desenvolve a coordenação motora</h3>
                 <p className="text-lg leading-relaxed font-bold text-blue-900">
                   Melhorando as habilidades motoras finas através de recortar, dobrar e montar os brinquedos.
                 </p>
@@ -118,7 +118,7 @@ const Index = () => {
             <div className="flex items-start gap-4">
               <div className="w-3 h-3 rounded-full bg-secondary flex-shrink-0 mt-2"></div>
               <div>
-                <h3 className="text-foreground text-xl font-bold mb-2">Aumentar a aproximação com os Pais</h3>
+                <h3 className="text-foreground text-xl font-bold mb-2">Aumenta a aproximação com os Pais</h3>
                 <p className="text-lg leading-relaxed font-bold text-blue-900">
                   Criar momentos únicos de conexão familiar através de atividades compartilhadas.
                 </p>
