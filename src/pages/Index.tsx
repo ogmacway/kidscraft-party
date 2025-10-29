@@ -26,9 +26,6 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
 import whatsappLogo from "@/assets/logo-whatsapp.png";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
-import bonusPuzzles from "@/assets/bonus-puzzles.webp";
-import bonusMemory from "@/assets/bonus-memory.webp";
-import bonusBobbie from "@/assets/bonus-bobbie.png";
 const Index = () => {
   const today = new Date();
   const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear().toString().slice(-2)}`;
@@ -186,24 +183,6 @@ const Index = () => {
                 ✓ VÍDEO AULAS ENSINANDO TÉCNICAS DE MONTAGEM
               </h3>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
-              <img src={bonusPuzzles} alt="Kit Quebra Cabeças" className="w-24 h-24 mx-auto mb-4 rounded-lg" />
-              <h3 className="text-white text-xl font-bold text-center mb-2">
-                ✓ KIT QUEBRA CABEÇAS
-              </h3>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
-              <img src={bonusMemory} alt="Kit Jogos da Memória" className="w-24 h-24 mx-auto mb-4 rounded-lg" />
-              <h3 className="text-white text-xl font-bold text-center mb-2">
-                ✓ KIT JOGOS DA MEMÓRIA
-              </h3>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20 md:col-span-2">
-              <img src={bonusBobbie} alt="100 Páginas Bobbie Goods" className="w-24 h-24 mx-auto mb-4 rounded-lg" />
-              <h3 className="text-white text-xl font-bold text-center mb-2">
-                ✓ 100 PÁGINA BOBBIE GOODS
-              </h3>
-            </div>
           </div>
         </div>
       </section>
@@ -216,7 +195,7 @@ const Index = () => {
               Resumo Da Sua Oportunidade De Hoje:
             </h2>
             <div className="space-y-3 mb-8">
-              {[" +250 Personagens de Papel Para Recortar", " Moldes Prontos para impressão", " Diversos modelos e personagens", " 30 dias de garantia", " Acesso imediato", " Suporte Completo no WHATSAPP", " Técnicas de Montagem em Vídeo", " Bônus: KIT QUEBRA CABEÇAS", " Bônus: KIT JOGOS DA MEMÓRIA", " Bônus: 100 PÁGINA BOBBIE GOODS"].map((item, index) => <div key={index} className="flex items-start gap-3">
+              {[" +250 Personagens de Papel Para Recortar", " Moldes Prontos para impressão", " Diversos modelos e personagens", " 30 dias de garantia", " Acesso imediato", " Suporte Completo no WHATSAPP", " Técnicas de Montagem em Vídeo"].map((item, index) => <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
                   <p className="text-foreground font-medium text-lg">{item}</p>
                 </div>)}
@@ -243,7 +222,7 @@ const Index = () => {
       {/* Guarantee Section */}
       <section className="bg-muted py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <img src={guaranteeSeal} alt="Selo de garantia de 30 dias" className="w-32 h-32 mx-auto mb-6" />
+          
           <h2 className="text-foreground text-2xl sm:text-3xl font-bold mb-4">
             GARANTIA INCONDICIONAL
           </h2>
