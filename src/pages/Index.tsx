@@ -226,7 +226,7 @@ const Index = () => {
               APENAS R$11,90
             </p>
             <div className="flex justify-center">
-              <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://go.pepperpay.com.br/zjsrf', '_blank')}>
+              <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://go.pepperpay.com.br/wpdsm', '_blank')}>
                 BAIXAR MEUS PERSONAGENS
               </Button>
             </div>
