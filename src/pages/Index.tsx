@@ -24,7 +24,6 @@ import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
-
 import whatsappLogo from "@/assets/logo-whatsapp.png";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 const Index = () => {
@@ -37,44 +36,15 @@ const Index = () => {
   };
   const characterImages = [<img src={character1} alt="Mulher Maravilha de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character2} alt="Naruto de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character3} alt="Baby Yoda de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character4} alt="Mestre Kame de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character5} alt="Hulk de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character6} alt="Homem de Ferro de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character7} alt="Round 6 de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character8} alt="Minecraft Steve de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character9} alt="Luffy de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character10} alt="Capitão América de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character11} alt="Stitch de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character12} alt="Cavaleiro do Zodíaco de papel" className="w-full h-auto rounded-xl shadow-md" />, <img src={character13} alt="Homem Aranha de papel" className="w-full h-auto rounded-xl shadow-md" />];
   const tutorialImages = [<img src={tutorial1} alt="Passo 1: Recortar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial2} alt="Passo 2: Colar" className="w-full h-auto rounded-xl shadow-md object-cover" />, <img src={tutorial3} alt="Passo 3: Brincar" className="w-full h-auto rounded-xl shadow-md object-cover" />];
-  const testimonialVideos = [
-    <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
-      <video 
-        src="/videos/depoimento-1.mp4" 
-        className="w-full h-full object-contain rounded-xl shadow-md"
-        controls
-        playsInline
-        preload="metadata"
-      />
-    </div>,
-    <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
-      <video 
-        src="/videos/depoimento-2.mp4" 
-        className="w-full h-full object-contain rounded-xl shadow-md"
-        controls
-        playsInline
-        preload="metadata"
-      />
-    </div>,
-    <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
-      <video 
-        src="/videos/depoimento-3.mp4" 
-        className="w-full h-full object-contain rounded-xl shadow-md"
-        controls
-        playsInline
-        preload="metadata"
-      />
-    </div>,
-    <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
-      <video 
-        src="/videos/depoimento-4.mp4" 
-        className="w-full h-full object-contain rounded-xl shadow-md"
-        controls
-        playsInline
-        preload="metadata"
-      />
-    </div>
-  ];
+  const testimonialVideos = [<div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
+      <video src="/videos/depoimento-1.mp4" className="w-full h-full object-contain rounded-xl shadow-md" controls playsInline preload="metadata" />
+    </div>, <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
+      <video src="/videos/depoimento-2.mp4" className="w-full h-full object-contain rounded-xl shadow-md" controls playsInline preload="metadata" />
+    </div>, <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
+      <video src="/videos/depoimento-3.mp4" className="w-full h-full object-contain rounded-xl shadow-md" controls playsInline preload="metadata" />
+    </div>, <div className="relative w-full aspect-[9/16] min-h-[400px] bg-muted/30 rounded-xl">
+      <video src="/videos/depoimento-4.mp4" className="w-full h-full object-contain rounded-xl shadow-md" controls playsInline preload="metadata" />
+    </div>];
   return <div className="min-h-screen bg-background">
       {/* Discount Bar */}
       <div className="bg-destructive py-3 px-4 text-center shadow-md">
@@ -86,9 +56,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-primary py-12 px-4 sm:py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 leading-tight">
-            +250 Personagens de papel para seu filho fazer e ficar longe das telas
-          </h1>
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 leading-tight">SUPER KIT 300 PERSONAGENS de papel para seu filho fazer e ficar longe das telas</h1>
           <div className="mb-8 max-w-2xl mx-auto">
             <img src={productMockup} alt="Kit de personagens de papel para imprimir" className="w-full h-auto rounded-2xl shadow-2xl" />
           </div>
@@ -172,25 +140,17 @@ const Index = () => {
             <Carousel className="w-full">
               <CarouselContent>
                 <CarouselItem>
-                  <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                      src="https://www.youtube.com/embed/YM_lTbazDlc"
-                      title="Tutorial de montagem - Parte 1"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                  <div className="relative w-full" style={{
+                  paddingBottom: '177.78%'
+                }}>
+                    <iframe className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/YM_lTbazDlc" title="Tutorial de montagem - Parte 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-                      src="https://www.youtube.com/embed/vs3VappJU2o"
-                      title="Tutorial de montagem - Parte 2"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                  <div className="relative w-full" style={{
+                  paddingBottom: '177.78%'
+                }}>
+                    <iframe className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/vs3VappJU2o" title="Tutorial de montagem - Parte 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                 </CarouselItem>
               </CarouselContent>
@@ -261,12 +221,7 @@ const Index = () => {
               <span className="text-3xl">ou 5x R$4,97</span>
             </p>
             <div className="flex justify-center">
-              <Button 
-                variant="cta" 
-                size="xl" 
-                className="w-full max-w-md"
-                onClick={() => window.open('https://go.pepperpay.com.br/ab7ih', '_blank')}
-              >
+              <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://go.pepperpay.com.br/ab7ih', '_blank')}>
                 BAIXAR MEUS PERSONAGENS
               </Button>
             </div>
@@ -298,12 +253,7 @@ const Index = () => {
             </h2>
             <div className="flex flex-col items-center gap-6">
               <img src={whatsappIcon} alt="WhatsApp" className="w-32 h-32 sm:w-40 sm:h-40" />
-              <Button 
-                variant="cta" 
-                size="xl" 
-                className="w-full max-w-md"
-                onClick={() => window.open('https://wa.me/5548992050264', '_blank')}
-              >
+              <Button variant="cta" size="xl" className="w-full max-w-md" onClick={() => window.open('https://wa.me/5548992050264', '_blank')}>
                 ENTRAR EM CONTATO
               </Button>
             </div>
