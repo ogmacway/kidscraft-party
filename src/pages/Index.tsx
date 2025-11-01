@@ -201,7 +201,7 @@ const Index = () => {
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20 md:col-span-2">
               <img src={bonusBobbie} alt="100 Páginas Bobbie Goods" className="w-24 h-24 mx-auto mb-4 rounded-lg" />
               <h3 className="text-white text-xl font-bold text-center mb-2">
-                ✓ 100 PÁGINA BOBBIE GOODS
+                ✓ 100 PÁGINAS BOBBIE GOODS
               </h3>
             </div>
           </div>
@@ -215,7 +215,7 @@ const Index = () => {
           <div className="bg-card rounded-3xl shadow-lg p-8 border-2 border-foreground">
             <h2 className="text-foreground text-2xl sm:text-3xl font-bold text-center mb-8">KIT BÁSICO:</h2>
             <div className="space-y-3 mb-8">
-              {["300 Personagens de Papel Para Recortar", "Acesso Vitalício", "30 Dias de garantia"].map((item, index) => (
+              {["300 Personagens de Papel", "Acesso Vitalício", "30 Dias de garantia"].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
                   <p className="text-foreground font-medium text-lg">{item}</p>
